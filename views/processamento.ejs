@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculos com js</title>
+</head>
+<body>
+     <%- include('../views/navbar');  %>
+     <div class="container">
+    
+      <div class="text-primary m-3">
+       <div class="col-l-4">
+	     <h1> Node js Developer. </h1>
+       <p > Por clayton Pereira de Oliveira. </p>
+       <p>@clayton</p>
+       <hr>
+      
+
+	 <% 
+
+     
+      //Equacao
+         n = 1 
+         m = 12
+         l = -64 
+
+      //inverter uma  Strong
+         text = 'l'
+     
+     //Media de tres numeros 
+          n1 = 100
+          nb = 100
+          n3 = 100
+
+    //escolhendo as operações
+          operator = 'md'
+          varN =   1
+          varNb =  3
+          varN3 =  -10
+          tInv = 'Clayton Pereira de Oliveira '
+
+    //randon 
+         randF = 900
+         randI= 1
+         //dfdfdfgd
+
+     //skils
+         porcent = 100
+         numeroQuestoes = 25
+         acertos = 4
+
+    //index of js   ---  texto deveter aspas 
+        tipF = '3'
+
+   //mutiplicação
+        mtf = 90
+        mt1 = '3'
+        //s
+
+   //developer operators system
+        acom = '1'; bcom = '2'; com = '3';  dcom = '4'; ecom = '5'; fcom = '6'; gcom = '7'; hcom = '8'; icom = '9'; jcom = '0';
+
+        vogais = 'a'; vogais1 = 'e'; vogais2 = 'i'; vogais3 = 'o'; vogais4 = 'u';
+
+        consoante = 'b'; consoante_1 =  'c'; consoante_b = 'd'; consoante_c = 'f'; consoante_d = 'g'; consoante_e = 'h'; consoante_f = 'j'; 
+        consoante_g = 'k'; consoante_h = 'l'; consoante_i = 'm'; consoante_j = 'n'; consoante_l = 'p';consoante_m = '0';  consoante_n = 'r'; 
+        consoante_3 = 's'; consoante_p = 't';consoante_q = 'v'; consoante_r = 'w'; consoante_s = 'x'; consoante_t = 'y'; consoante_v = 'z';
+        pontEacentos = '.'; pontEacentos1 = "?"; pontEacentosb ='!'; pontEacentos3 = '/';
+        carcteres = '@'; caracteres1 = '#'; caracteresb = '&'; caracteres3 = "%";
+             
+        abc =  'a  ' + ' = ' +  n + ' , '  +  '  b  ' + ' = ' +  m  + ' ,  ' +  '  c  '  + ' = ' + l + ' ; '
+        sinal_de_a =  n >=  0  ? 'Equação com a positivo :  ' +  abc      :  'Equação com a negativo   :  ' + abc
+        sinal_de_b =  m  >=  0  ? ' + ' :  '  '
+        sinal_de_c =  l >=  0  ? ' + ' :  '  '
+        raizes = 's';
+        
+        delta = (a,b,c) => { return (b * b) -(4 * a * c)  }
+
+        equacao = (a,b,delta) =>  {  return (-b + Math.sqrt(delta))  /( 2 *  a )   }   
+         
+        y  = (a,b,delta) =>  {  return  (-b - Math.sqrt(delta))  /(2 * a)    } 
+
+        equacao_hji =  (f) => {   resultado = f.split('').reverse().join('');  return resultado; }  
+
+        media = (n1,nb,n3) =>  {   return (n1 + nb + n3) / 3 }
+
+        Numero_rendomico = (a)  => {  ntf =  Math.floor(Math.random() * a + randI); return ntf; }
+
+        porcentagem_de_questoes_acertadas = (porcent,n,a) => { result =  (acertos * porcent ) / numeroQuestoes; return result;}
+
+        tipo = (a) => { resultTipy =  typeof  a;  return  resultTipy; }
+
+        mult = (n1,m1) =>  { multplicando =  (n1 * m1); return multplicando; }
+
+        conversor = (variavel) =>  {  convertendoParaNumeros = parseFloat(variavel); return   convertendoParaNumeros;  }
+
+        maiusculas = (texto)  => { text = texto.toUpperCase();  return text;   }
+
+       msd  = () => { dm1 = new Date(); return dm1.getMonth(); }
+       
+       meses  = (a)  =>  { mes =  ['Janeiro', 'Fevereiro', 'Março',  'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];   return  mes[a];  }  
+         
+      
+      
+    %>
+
+   <div class="col-md-12 col-lg-12 col-xl-12" style="border: 1px solid green; width: 90%; height: 430px;margin-top: 26px;margin-bottom: 4px;margin-right: 1px;">
+    <h3 class="text-primary">Equação do segundo grau</h3>
+    <h3 class="text-info">Exemplo :  1  ,  -4  ,   3  esta equação tem raizes  -3  e  -1  =>   equação atual tem :  <%=   abc   %> </h3>
+    <h3 style="color: green;text-shadow: 1px 1px 1px;font-size: 26px;"> <%= sinal_de_a + n + 'x²  ' + sinal_de_b +  m  + 'y ' +  sinal_de_c  + l + ' =  0 '  %></h3>
+    <h3 style="text-underline-position: under;"> Delta  da equacão <%=   j =  delta(n,m,l)  %> </h3>
+    <h4 style="color: blue"><%= j >= 0 ?  f = equacao(n,m,j) : 'ops   !   delta negativo  esta conta não pode ser realizada... '   %></h4> 
+    <h4 style="color: lightblue"><%= j >= 0 ? i =  y(n,m,j) : ''  %></h4>
+    <h3 style="font-size: 30px;color:green;margin-right:30px;"> 
+      <%=   (j  == 0 ? 'Equação com  raizes iguais : ' + f  : (j  < 0 ? 'Equação inválida : ("sem raizes possíveis ") , pois o delta não pode ser < do que zero ! ' :  (j  >=  0 ? '  Raizes :  ' + f +  '   e  '  +   i : ' ')))    %>
+    </h3>
+    <h3 class="text-primary"><%=  vogais    %>  </h3>
+   </div>  
+
+   <div style="width: 90%; height: 196px;border: 1px solid green;margin-top: 80px;" class="col-md-12 col-lg-12 col-xl-12">
+    <h3 style="color: #0094FFFF;">Inverter uma string  :    <%=  st = equacao_hji(text)    %></h3>
+    <h3 style="color: green">Media de três valores : <%=  md =  media(n1,nb,n3)  %>   </h3>
+    <h3 style="color: blue;">Variados entre :  <%= randF  + '  e   ' +  randI  + '  , '   +  Numero_rendomico(randF) %> </h3>
+
+   <h3 class="text-primary"> <%= consoante  %></h3>
+  </div>
+
+ <div style="width: 90%; height: 414px;border: 1px solid green;margin-top: 80px;" class="col-md-12 col-lg-12 col-xl-12">
+   <h3 class="text-info">Questions => Seu resultado  é... <%=  porcentagem_de_questoes_acertadas(porcent,numeroQuestoes,acertos) + '% das ' +  numeroQuestoes + '   questões' %>
+   <h3 class="text-primary"> Conta : <%=  operator === 'raizes_quadrada' ? 'Isto é uma equacão do segundo  grau => '  +  ' Δ  da conta é :  ' + delta(varN,varNb,varN3)
+        + ',   As raizes são : '    + y(varN,varNb,delta(varN,varNb,varN3))  +  ' e ' + equacao(varN,varNb,delta(varN,varNb,varN3))  : operator === 'md' ? 'A media entre : ' + n1   +  ' , '  +  nb   + ' e ' +  n3  + '  = ' +  media(n1,nb,n3) :
+        operator === 'stringheight' ? 'Esta palavra  :  ' + tInv +   ' string , de trás para frente :  ' + equacao_hji(tInv)  :  'Outros=> ainda não desenvolvemos essa ... !  '%> </h3> 
+         <h3 class="text-info" >Texto (js) é do tipo  :  <%=  tipo(tipF)  +  ' => ' +   tipF %> </h3> 
+
+         <h3 class="text-info"><%=  (tipo(mtf)) === 'number' && (tipo(mt1)) === 'number' && ntf != 0  ?  'Multiplicando : ' +  mtf + ' x ' + mt1  + ' = '  +  mult(mtf,mt1)  : '  Por favor digite um número,  se número digite sem aspas.  ! ' + tipo(mtf)    %></h3>
+
+
+           <h3 class="text-info"> <%= (dcom +  jcom  +  ecom + icom) %> </h3>
+
+
+           <h3 class="text-info"> <%=  conversor(icom) + conversor(acom) - conversor(dcom) %> </h3>
+
+
+           <h3 class="text-info">String para number :  <%=  conversor(icom)   ?  ' '  : 'Isso não é um número !'  %> </h3>
+          
+
+           <h3><%= // meses()   %>
+
+           <h3><%= //meses(msd())   %> </h3>
+
+
+           <h3><%= //meses()  %> </h3>
+
+         <h3 class="text-primary" >Functons js  <%=  //nl1() %></h3>
+
+           <h3 class="text-primary" > <%= consoante_1  %></h3>
+    
+      </div>
+    </div>
+    
+   <div style="width: 90%; height: 94px;border: 1px solid green;margin-top: 80px;bottom: 30px;" class="col-md-12 col-lg-12 col-xl-12">
+
+   <!-- <h3 style="color: #3F7F62FF;font-family: sans-serif;" >@js aerofunctions.</h3> -->
+
+     <h3 class="text-primary"> <%= (carcteres  +  maiusculas(consoante_f) + consoante_3 + ' ' + vogais + vogais1   + consoante_n 
+      + vogais3 + consoante_c + vogais4 +  consoante_j + consoante_1 + consoante_p  +   vogais2 + vogais3 + consoante_j  + consoante_3 +  pontEacentosb ) %> </h3>
+
+  
+    </div>
+ </div>   
+</div>
+   <%- include('../views/footer') %>
+   
+
+
+
+</body>
+</html>

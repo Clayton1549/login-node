@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>login</title>
+</head>
+ 
+<body>
+
+<%- include('../views/autentic'); %>
+ 
+<div class="container">
+     <% if (typeof Username !== 'undefined') { %>
+        <h1 class="text-info">Seja bem vindo: <%= Username %>!</h1>
+    <% } else { %>
+        <p>Faça login</p>
+    <% } %>
+   
+	 <h1 class="text-success"> Pagína de inicío </h1>
+     
+	 <h3 class="text-info"> Node js  e  back-end. </h3>
+
+	 <h3 class="text-primary">Resumos</h3>
+
+	  <p>À princípio site feito com node js para estudo.</p>
+	  <p>Sistema de login.</p>
+	  <p>Uma vez feito login o usuário terá ascesso a páginas exclusivas.</p>
+	  <p>Exibindo o nome da pessa registrada no MySQL ela podera fazer as alterações nescessárias.</p>
+	  <p>Alteração de senha e exclusão da conta.</p>
+	  <p>Uma vez feita a exclusão a sessão e destruida, voltando para tela de login</p>
+      
+	
+  </div>
+
+   <%-include('../views/footer')%> 
+ </body>
+</html>
+   

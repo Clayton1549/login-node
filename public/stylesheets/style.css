@@ -1,0 +1,53 @@
+body {
+ /* padding: 50px;*/
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffff;
+  color: blue;
+  padding: 0;
+
+}
+
+.container div  {
+
+	text-align: justify;
+	
+}
+
+
+.container #textoDeisng p{
+ color: green;
+}
+
+.container h1{
+	color: lightblue;
+}
+
+/*pagina user-list*/
+.container table, th, td {
+  border: 1px solid;
+}
+
+
+/*pagina idex*/
+
+#login{
+	border: 3px solid lightblue;
+	width: 400px;
+	height: 350px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  margin: 100px auto;
+  padding: 20px;
+	
+  }
+  #loginNome { 
+    margin:50px 0px 0px 0px;
+     }
+
+#l1{
+	text-align: center;
+}
+
+#btnlogin{
+  margin-left: 40%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,0">
+<title>Cadastrando usuario</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+ <div class="container">
+  <h1 class="text-info">Criando uma conta </h1>
+
+<form class="row g-3" method="post" action="/conta">
+  <div class="col-md-9">
+    <label for="nome" class="form-label text-info">Nome</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo..." required>
+  </div>
+  <div class="col-md-9">
+    <label for="email" class="form-label text-info">Email </label>
+    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+  </div>
+ <div class="col-md-9">
+  <label for="username" class="form-label text-info">Nome de usuário</label>
+  <div class="input-group">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" id="username" name="username" required>
+  </div>
+</div>
+
+
+  <div class="col-md-9">
+    <label for="cidade" class="form-label text-info">Cidade</label>
+    <input type="text" class="form-control" name="cidade" id="cidade" required>
+  </div>
+  <div class="col-md-3">
+   <label for="estado" class="form-label text-info">Estado</label>
+   <div class="col-md">
+    <div class="form-floating">
+     <select class="form-control" name="selectUf" id="selectUf" aria-label="Selecionar estado">
+          <option selected>SP</option>
+          <option>AC</option> 
+          <option>AL</option> 
+          <option>AP</option> 
+          <option>AM</option> 
+          <option>BA</option> 
+          <option>CE</option> 
+          <option>DF</option> 
+          <option>ES</option> 
+          <option>GO</option> 
+          <option>MA</option> 
+          <option>MT</option> 
+          <option>MS</option> 
+          <option>MG</option> 
+          <option>PA</option> 
+          <option>PB</option> 
+          <option>PR</option> 
+          <option>PE</option> 
+          <option>PI</option> 
+          <option>RJ</option> 
+          <option>RN</option> 
+          <option>RS</option> 
+          <option>RO</option> 
+          <option>RR</option> 
+          <option>SC</option> 
+          <option>SE</option> 
+          <option>TO</option> 
+      </select>
+      <label for="floatingSelect" class="text-info">Unidade da federação.</label>
+
+    </div>
+  </div>
+  </div>
+    <div class="col-md-6">
+    <label for="senha" class="form-label text-info">Senha</label>
+    <input type="password" class="form-control" name="senha" id="senha" required>
+  </div>
+    <div class="col-md-6">
+    <label for="confirmar" class="form-label text-info">Confirmar senha</label>
+    <input type="password" class="form-control" id="confirmar" required>
+  </div>
+  <div class="col-md-3">
+    <label for="cep" class="form-label text-info">Cep</label>
+    <input type="text" class="form-control" name="cep" id="cep" required>
+  </div>
+  
+  <div class="col-md-12">
+    <br>
+    <div>
+      <button class="btn btn-outline-info" type="submit">Pronto?</button>
+      <a class="btn btn-light" href="/"> Não quero !</a>
+     
+    </div>
+  </div>
+</form>
+
+ 
+</div>
+
+</body>
+</html>
